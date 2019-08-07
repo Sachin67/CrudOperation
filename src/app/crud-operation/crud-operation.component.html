@@ -1,0 +1,62 @@
+<form style="margin-left: 45%" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    First name:<br>
+    <input type="text" formControlName="firstName" name="firstname" placeholder="FirstName">
+    <div *ngIf="registerForm.controls.firstName.invalid && registerForm.controls.firstName.touched" class="text-danger">
+            <small *ngIf="registerForm.controls.firstName.errors.required">First Name is required.</small>
+            <small *ngIf="registerForm.controls.firstName.errors.maxLength">FirstName must be a valid.</small>
+     </div>
+    <br><br>
+    Last name:<br>
+    <input type="text" formControlName="lastName" name="lastname" placeholder="LastName">
+    <div *ngIf="registerForm.controls.lastName.invalid && registerForm.controls.lastName.touched" class="text-danger">
+            <small *ngIf="registerForm.controls.lastName.errors.required">LastName is required.</small>
+            <small *ngIf="registerForm.controls.lastName.errors.maxLength">maxLength</small>
+     </div>
+    <br><br>
+    Address:<br>
+    <input type="text" formControlName="Address" name="Address" placeholder="Address">
+    <div *ngIf="registerForm.controls.Address.invalid && registerForm.controls.Address.touched" class="text-danger">
+            <small *ngIf="registerForm.controls.Address.errors.required">Address is required.</small>
+            <small *ngIf="registerForm.controls.Address.errors.maxLength">maxLength</small>
+     </div>
+    <br><br>
+    MobileNo:<br>
+    <input type="number" formControlName="MobileNo" name="MobileNo" placeholder="MobileNo">
+    <div *ngIf="registerForm.controls.MobileNo.invalid && registerForm.controls.MobileNo.touched" class="text-danger">
+            <small *ngIf="registerForm.controls.MobileNo.errors.required">MobileNo is required.</small>
+            <small *ngIf="registerForm.controls.MobileNo.errors.maxLength">maxLength</small>
+     </div>
+    <br><br>
+    Id:<br>
+    <input type="number" formControlName="Id" name="Id" placeholder="Id">
+    <div *ngIf="registerForm.controls.Id.invalid && registerForm.controls.Id.touched" class="text-danger">
+            <small *ngIf="registerForm.controls.Id.errors.required">Id is required.</small>
+            <small *ngIf="registerForm.controls.Id.errors.maxLength">maxLength</small>
+     </div>
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="button" class="mrgButton" value="Update" (click)="upadteDetails(registerForm)">
+  </form> 
+  <table *ngIf="tempData.length>0" border="3" class="tblBorder">
+    <tr>
+      <th>Id</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Address</th>
+      <th>MobileNo</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    <tr *ngFor="let data of tempData"> 
+      <td>{{data.Id}}</td>
+      <td>{{data.firstName}}</td>
+      <td>{{data.lastName}}</td>
+      <td>{{data.Address}}</td>
+      <td>{{data.MobileNo}}</td>
+      
+      <td (click)="editDetails(data)">Edit</td>
+      <td (click)="deleteElement(data.Id)">Delete</td>
+    </tr>
+  
+ </table>
+

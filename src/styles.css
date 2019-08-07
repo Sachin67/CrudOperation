@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+.mrgButton{
+    margin-left: 20px;
+}
+.tblBorder{
+    margin-top: 20px ;font-family: arial, sans-serif; border-collapse: collapse; width: 100%;
+}
