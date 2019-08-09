@@ -15,11 +15,11 @@ export class CrudOperationComponent implements OnInit {
 
   ngOnInit() {
     this.registerForm = this.formBuilder.group({
-      firstName: ['', Validators.required,Validators.maxLength(4)],
-      lastName: ['', Validators.required,Validators.maxLength(4)],
-      Address: ['', Validators.required,Validators.maxLength(4)],
-      MobileNo: ['', Validators.required,Validators.maxLength(4)],
-      Id: ['', Validators.required,Validators.maxLength(4)],
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
+      Address: ['', Validators.required],
+      MobileNo: ['', Validators.required],
+      Id: ['', Validators.required],
   });
   }
 
@@ -54,6 +54,7 @@ export class CrudOperationComponent implements OnInit {
         this.tempData[i]=data.value;
       }
     }
+    this.registerForm.reset();
   }
 
 }
