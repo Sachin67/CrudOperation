@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { CrudOperationService } from '../crud-operation.service';
+import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-crud-operation',
@@ -10,8 +13,23 @@ export class CrudOperationComponent implements OnInit {
   
   tempData:any=[];
   registerForm: FormGroup;
+  messages:any=[];
+  subscription:Subscription;
+  detailsData:any={};
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder,public crudOperationService:CrudOperationService,private router: Router) {
+
+   }
+
+   sendMessage(): void {
+    // send message to subscribers via observable subject
+    this.crudOperationService.sendMessage('Message from Home Component to App Component!');
+}
+
+clearMessages(): void {
+    // clear messages
+    this.crudOperationService.clearMessages();
+}
 
   ngOnInit() {
     this.registerForm = this.formBuilder.group({
@@ -55,6 +73,15 @@ export class CrudOperationComponent implements OnInit {
       }
     }
     this.registerForm.reset();
+  }
+
+  getDetails(){
+    this.detailsData=this.crudOperationService.getDetails();
+    alert(this.detailsData);
+  }
+
+  redirectToLogin(){
+    this.router.navigate(['/login'])
   }
 
 }

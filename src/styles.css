@@ -5,3 +5,635 @@
 .tblBorder{
     margin-top: 20px ;font-family: arial, sans-serif; border-collapse: collapse; width: 100%;
 }
+
+.show-accordian-content {
+    display: block !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.hide-accordian-content {
+
+}
+
+.cursor {
+    cursor: pointer !important;
+}
+
+.cursor-invalid {
+    cursor: not-allowed !important;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.width-100 {
+    width: 100% !important;
+}
+
+.width-50 {
+    width: 50% !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.error {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.msg {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+#login-box {
+    width: 300px;
+    padding: 20px;
+    margin: 100px auto;
+    background: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border: 1px solid #000;
+}
+
+canvas {
+    border: 1px solid #c4caac;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed !important;
+    /* Stay in place */
+    z-index: 999 !important;
+    /* Sit on top */
+    padding-top: 100px !important;
+    /* Location of the box */
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    /* Full width */
+    height: 100% !important;
+    /* Full height */
+    overflow: auto !important;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0) !important;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    /* Black w/ opacity */
+    margin: 0 auto !important;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: mintcream !important;
+    margin: auto !important;
+    padding: 20px !important;
+    border: 3px solid black !important;
+    width: 50% !important;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa !important;
+    float: right !important;
+    font-size: 28px !important;
+    font-weight: bold !important;
+}
+
+.close:hover, .close:focus {
+    color: #000 !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+/* input[type="button"] {
+    font-size: 20px !important;
+    border-radius: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    background: #228B22 !important;
+} */
+
+p {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    font-family: sans-serif !important;
+    margin-top: 10px !important;
+}
+
+.closurereason {
+    clear: both !important;
+    width: 36% !important;
+    padding: 20px 20px !important;
+    border: 2px solid #cccccc !important;
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    -ms-border-radius: 30px !important;
+    border-radius: 30px !important;
+}
+
+#canclebtn, #okbtn {
+    font-size: 20px !important;
+    border-radius: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    background: #003869 !important;
+}
+
+#canclebtn {
+    margin-right: 35%;
+}
+
+#okbtn {
+    margin-left: 35%;
+}
+
+.mrgbtn20 {
+    margin-bottom: 20px;
+}
+
+.agreementblock {
+    overflow: auto;
+}
+
+.indigo-ui .ifl-form-master .ifl-error {
+    color: #db261d !important;
+    font-size: 1.4rem !important;
+    font-weight: 600;
+}
+
+.selectedvalue-drop > p {
+    display: none;
+}
+
+.ifl-selectbox .ifl-error {
+    margin-top: 8px !important;
+}
+
+.float-left-50 {
+    float: left;
+    width: 50%;
+}
+
+.float-left-60 {
+    float: left;
+    width: 60%;
+}
+
+.float-right-50 {
+    float: right;
+    width: 50%;
+}
+
+.float-right-40 {
+    float: right;
+    width: 40%;
+}
+
+.lifeAssured .heading {
+    color: #e66f13 !important;
+    font-size: 18px !important;
+}
+
+.lifeAssured .subheading {
+    color: #0093de !important;;
+}
+
+.nominee .bottom-add-text, .cheque .bottom-add-text {
+    font-size: 1.3rem;
+    float: right;
+    cursor: pointer;
+    color: #0093de !important;
+}
+
+.nominee .bottom-remove-text, .cheque .bottom-remove-text {
+    font-size: 1.4rem;
+    float: right;
+    cursor: pointer;
+    color: Red !important;
+    margin-bottom: 10px;
+}
+
+.nominee .btm, .cheque .btm {
+    border-bottom: 1px dotted #000 !important;
+}
+
+.nominee form {
+    padding: 30px 0 0px !important;
+}
+
+.padding-0-250 {
+    padding: 0px 250px !important;
+}
+
+.show-accordian .ifl-accordion-content {
+    display: block !important;
+}
+
+.hide-accordian .ifl-accordion-content {
+    display: none !important;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.signature-pad {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+}
+
+.logout {
+    text-decoration: none !important;
+    outline: none !important;
+    color: #0062a8 !important;
+    font-size: 11px !important;
+}
+
+.signatureLink {
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer !important;
+}
+
+.btn-aadhar-close {
+    float: right !important;
+    margin-top: -30px !important;
+}
+
+.errmsg {
+    color: #db261d !important;
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;;
+    margin-top: 3px !important;;
+}
+
+.mrgtbl {
+    margin: 0 auto;
+}
+
+.mxwidth {
+    max-width: 1024px;
+}
+
+.saveLead {
+    opacity: 0.5;
+}
+
+.sendOpaDataDisable{
+	 opacity: 0.5;
+}
+
+.uploadDocName {
+    font-size: 13px;
+    color: #0093de;
+    font-weight: bold;
+}
+
+.indigo-ui .ifl-customSelectBox1 ul {
+    background: #fff;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    position: absolute;
+    /* left: 0; */
+    /* top: 100%; */
+    width: 210px;
+    min-width: 210px;
+    /* max-width: 400px; */
+    padding: 0 16px;
+    z-index: 99;
+    max-height: 299px;
+    overflow-y: auto;
+}
+
+/* line 62, ../scss/components/_customselect.scss */
+
+.indigo-ui .ifl-customSelectBox1 ul li {
+    clear: both;
+    border-bottom: 1px solid #dcd7cc;
+    width: 100%;
+    float: left;
+    text-align: left;
+    padding: 8px 0;
+}
+
+/* line 69, ../scss/components/_customselect.scss */
+
+.indigo-ui .ifl-customSelectBox1 ul li a {
+    font-size: 1.6rem;
+    color: #0093de;
+    font-family: "Whitney-Medium", Arial;
+    line-height: 1.2;
+    float: left;
+    width: 100%;
+}
+
+/* line 77, ../scss/components/_customselect.scss */
+
+.indigo-ui .ifl-customSelectBox1 ul li p {
+    padding-top: 0px;
+    color: #777777;
+    font-size: 1.3rem;
+}
+
+/* line 82, ../scss/components/_customselect.scss */
+
+.indigo-ui .ifl-customSelectBox1 ul li:last-child {
+    border-bottom: 0;
+}
+
+/* line 86, ../scss/components/_customselect.scss */
+
+.indigo-ui .ifl-customSelectBox1 ul li:hover a,
+.indigo-ui .ifl-customSelectBox1 ul li.selected a {
+    color: #e66f13;
+}
+
+.medical.btm {
+    border-bottom: 1px solid black;
+}
+
+.closeLeadButtonReason {
+    border: 1px solid #dddddd;
+    width: 100%;
+    float: left;
+    padding: 12px;
+    margin: 18px 72px 31px 60px !important;
+    height: 100px;
+    max-width: 400px;
+    font-size: 1.4rem;
+    resize: none;
+}
+
+.model-center {
+    text-align: center;
+}
+
+.disabled_section {
+    pointer-events: none;
+}
+
+#okbtn1 {
+    margin-left: 25%;
+}
+
+/*Detail Gathering Short*/
+.pdbtm0 {
+    padding-bottom: 0px;
+}
+
+.ifl-error {
+    color: #db261d !important;
+    font-size: 1.4rem !important;
+    font-weight: 600;
+}
+
+.plusSign{
+	font-size: 2.5rem;
+    color: #e66f13;
+    line-height: 2.4;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.paddL10{
+	padding-left: 10px;
+}
+.margT10{
+	margin-top: 10px;
+}
+.margT20{
+	margin-top: 20px;
+}
+.marg20{
+	margin-top: -20px;
+	margin-bottom: 20px
+}
+
+.inputH10{
+	height: 10px !important;
+}
+.fieldAlignemnt{
+	margin-left: 16px !important;
+    width: 350px !important;
+    height: 10px !important;
+}
+.fieldAlignemnt1{
+	width: 350px !important;
+    height: 10px !important;
+}
+.central-align{
+	text-align: center;
+    width: 400px !important;
+}
+.closurereason1 {
+    clear: both !important;
+  /*   width: 36% !important; */
+    /* padding: 20px 20px !important; */
+    border: 2px solid #cccccc !important;
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    -ms-border-radius: 30px !important;
+    border-radius: 30px !important;
+    /* margin-left: 16px !important; */
+    width: 350px !important;
+    height: 42px !important;
+    padding-left: 10px !important;
+}
+.vd-table{
+	text-align: left !important;
+    margin-left: 32%;
+}
+.firstv-table{
+	text-align: left !important;
+    margin-left: 38%;
+}
+.vdw-table{
+	text-align: left !important;
+    margin-left: 23%;
+}
+.vd-table-tr{
+	    padding-bottom: 5px !important;
+}
+.vd-table-td{
+	    padding-right: 5px !important;
+}
+.fontSize{
+	font-size: 15px;
+}
+.bottom-add-text {
+    font-size: 1.3rem;
+    float: right;
+    cursor: pointer;
+    color: #0093de !important;
+}
+.bottom-remove-text{
+	font-size: 1.4rem;
+    float: right;
+    cursor: pointer;
+    color: Red !important;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+.indigo-ui .details-gathering .box-border .ifl-accordion-row h2, .indigo-ui .review .box-border .ifl-accordion-row h2{
+	background: transparent !important;
+}
+.ifl-accordion-content{
+	padding-bottom:0 !important;
+	padding-top: 10px !important;
+}
+.txtaligncenter{
+	text-align:center!important;
+}
+.padtop15{
+	padding-top:15px;
+}
+mrgleft0{
+	margin-left:0;
+}
+.durationtext{
+	font-size: 1.5em !important;
+}
+.disclaimer span:nth-child(2){
+	   font-size: 12px;
+}
+#family-medical-history .ifl-inputtext {
+    font-size:14px;
+}
+#family-medical-history div.ifl-inputtext{
+	width:77% !important;
+}
+#family-medical-history .ifl-slide-checkbox{
+	max-width: 11%;
+}
+.bdmbtn{
+	padding: 5px 25px !important;
+    background: #e66f13 !important;
+    color: white;
+    float: right;
+    font-size: 15px !important;
+    border-radius: 20px;
+    font-weight:600 !important;
+    margin-bottom: 15px!important;
+}
+.bdmtablestyle th{
+	font-size:13px;
+	text-align:center !important;
+}
+.bdmtablestyle td{
+	
+	text-align:center !important;
+}
+.bdmtablestyle .table{
+	border: 1px solid #dddddd !important;
+	}
+.apploanmsg{
+	font-size: 18px;
+    font-weight: 600;
+}
+.apppopinput{
+	height: 20px !important;
+    width: 20px !important;
+}
+.appinputform{
+	padding: 15px;
+}
+.modal2{
+	position: fixed !important;
+    z-index: 999 !important;
+    padding-top: 100px !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: auto !important;
+    background-color: rgb(0, 0, 0) !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    margin: 0 auto !important;
+}
+.bdmcontainer{
+	padding:20px;
+}
+.modalwidth1{	
+	width: 30% !important;
+}
+.modalwidth2{	
+	width: 36% !important;
+}
+@media only screen and (max-width: 480px){
+	.modalwidth1{	
+	width: 85% !important;
+}
+.modalwidth2{	
+	width: 85% !important;
+}
+}
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+	.modalwidth1{	
+	width: 65% !important;
+	}
+	.modalwidth2{	
+	width: 65% !important;
+	}
+}
+
+.nopad{
+	padding:0px !important;
+}
+.nomargin{
+	margin-top:0px !important;
+}
+
