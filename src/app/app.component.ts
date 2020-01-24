@@ -12,6 +12,7 @@ export class AppComponent {
   messages:any=[];
   clients:any={};
   subscription:Subscription;
+  serverElements=[{name:'TestServer',type:'server',content:'Test Server Message'}]
   
   constructor(private crudOperationService:CrudOperationService){
     this.subscription = this.crudOperationService.getMessage().subscribe(message => {
@@ -31,7 +32,15 @@ export class AppComponent {
     })
   }
 
-  
+  onServerAdded(emittedData){
+    console.log("Emmited data in app component",emittedData);
+    // this.serverElements.push({
+    // type:'server',
+    // name:this.newServerName,
+    // Content:this.newServerContent
+   // });
+
+  }
 
   ngOnDestroy(){
     this.subscription.unsubscribe();

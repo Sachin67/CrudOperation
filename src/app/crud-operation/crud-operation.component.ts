@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CrudOperationService } from '../crud-operation.service';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-crud-operation',
@@ -16,6 +17,7 @@ export class CrudOperationComponent implements OnInit {
   messages:any=[];
   subscription:Subscription;
   detailsData:any={};
+  @Output() serverCreated=new EventEmitter<{serverName:string,serverContent:string}>();
 
   constructor(private formBuilder: FormBuilder,public crudOperationService:CrudOperationService,private router: Router) {
 
@@ -82,6 +84,12 @@ clearMessages(): void {
 
   redirectToLogin(){
     this.router.navigate(['/login'])
+  }
+
+  
+
+  onAddServer(){
+    this.serverCreated.emit({serverName:this.registerForm.value.firstName,serverContent:this.registerForm.value.lastName});
   }
 
 }

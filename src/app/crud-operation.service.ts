@@ -32,14 +32,7 @@ export class CrudOperationService {
   }
 
   getDetails():Observable<any>{
-
-    
-    httpOptions.headers.append('Access-Control-Allow-Origin', '*');
-    httpOptions.headers.append('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-    httpOptions.headers.append('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    httpOptions.headers.append('Access-Control-Allow-Credentials', 'true');
-
-    return this.http.get('http://localhost:9300/rapid-rest/master/master-data-list?requestedPage=lead-page',httpOptions);
+   return this.http.get('https://console.firebase.google.com/project/studentregistration-8bb7b/database/data/userData/users/-KXyODWV514UDYbf8eNL');
   }
 
 
